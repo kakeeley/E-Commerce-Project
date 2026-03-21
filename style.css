@@ -28,6 +28,14 @@ p {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .nav__container {
   width: 100%;
   max-width: 1200px;
@@ -145,6 +153,16 @@ button:active {
   margin: 0 auto;
 }
 
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no-cursor {
+  cursor: not-allowed;
+}
+
 /*
 
 HIGHLIGHTS
@@ -236,7 +254,7 @@ FEATURES
   padding: 24px;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
 }
 
 .book__img {
@@ -276,3 +294,52 @@ FEATURES
   text-decoration: line-through;
   padding-right: 6px;
 }
+
+/*
+
+EXPLORE
+
+*/
+
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo--img {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+}
+
+.footer__list, 
+.footer__copyright {
+  color: #ffff;
+}
+
+.footer__list {
+  margin: 20px 0 24px 0;
+}
+
+.footer__link {
+  color: white;
+  padding: 0 8px;
+}
+
+
+
